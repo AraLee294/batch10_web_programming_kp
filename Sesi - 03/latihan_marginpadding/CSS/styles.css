@@ -1,0 +1,23 @@
+body{
+    background: rgb(181, 179, 179);
+    color: rgb(61, 156, 239);
+
+}
+
+h1{
+    text-align: center;
+}
+
+.box{
+    background: rgb(15, 15, 15);
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-dua{
+    background: rgb(234, 230, 230);
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+}
