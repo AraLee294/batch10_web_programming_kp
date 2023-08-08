@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Sesi 6 latihan looping</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(235, 235, 240); background-color: rgb(78, 211, 147); padding: 15px;">Tugas Sesi 6 Looping</h1>
+    <h3>Belajar Interval &nbsp; Timeout</h3>
+    <p id="lorem"></p>
+    <script>
+      var lorem = document.getElementById("lorem");
+      var textLorem = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolores sequi molestiae est necessitatibus excepturi laboriosam recusandae
+      voluptatem sapiente, nihil culpa praesentium minus amet laborum voluptas
+      aliquam. Obcaecati, accusamus laborum.`;
+      for (let i = 0; i < 3; i++) {
+        document.getElementById("lorem").innerHTML += `
+			<p>${textLorem}</p>`;
+      }
+      setInterval(() => {
+        setTimeout(() => {
+          document.body.style.backgroundColor = "green";
+          lorem.style.color = "black";
+        }, 500);
+        document.body.style.backgroundColor = "blue";
+        lorem.style.color = "white";
+      }, 1000);
+    </script>
+
+<script>
+  var interval, timeout;
+  var x = document.getElementsByTagName("h3")[0];
+
+  changeColor();
+
+  function changeColor() {
+    clear(); //clear
+    interval = setInterval(myFunction, 500);
+    timeout = setTimeout(clear, 5000); //4x500 + 4 times run
+  }
+
+  function clear() {
+    if (interval) {
+      clearInterval(interval);
+      console.log("clear interval");
+    }
+    if (timeout) {
+      clearInterval(timeout);
+      console.log("clear timeout");
+      x.style.color = "black"; //end color
+      x.style.backgroundColor = "white"; //end background
+    }
+  }
+
+  function myFunction() {
+    x.style.color = x.style.color == "white" ? "yellow" : "white";
+
+    //menggunakan if
+    if (x.style.color == "white") {
+      x.style.backgroundColor = "blueviolet";
+    } else {
+      x.style.backgroundColor = "red";
+    }
+
+    //menggunakan switch
+    switch (x.style.color) {
+      case "white":
+        x.style.backgroundColor = "blueviolet";
+        break;
+      case "yellow":
+        x.style.backgroundColor = "red";
+        break;
+      default:
+        x.style.backgroundColor = "blue";
+        break;
+    }
+  }
+</script>
+  </body>
+</html>

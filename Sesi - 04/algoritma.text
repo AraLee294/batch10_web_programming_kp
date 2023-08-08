@@ -1,8 +1,26 @@
-Menghitung jam kerja karyawan
+Menghitung Luas dan Keliling Lingkaran
 
-1. Input Jam Masuk kerja (chek in)
-2. Input Jam Pulang Kerja (check out)
+Note :
+pi : 22/3
+r : jari - jari
+d : diameter (2r)
 
-kalkulasi perhitungan
-Jam chek out - jam check in
+Rumus Luas Lingkaran : pi x r x r
 
+Rumus Keliling Lingkaran : 2 x pi x r
+
+Algoritma Luas Lingkaran :
+1. Pilih Tab "Luas Lingkaran"
+2. Input Jari - Jari
+3. Input nilai pi
+4. Klik button "Hasilkan"
+
+Algoritma Keliling Lingkaran :
+1. Pilih Tab "Keliling Lingkaran"
+2. Input Jari - Jari
+3. Input nilai pi
+4. Klik button "Hasilkan"
+
+Nama : Ali Ramdan Tanjung
+Batch : 10
+No Peserta : INPG-PKJ-10-019
